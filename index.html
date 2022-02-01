@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>What's The Weather</title>
 </head>
@@ -14,15 +16,30 @@
   </header>
 
 
+  <main class="flex-row justify-space-between">
+    <div class="card col-12 col-md-3">
+      <h3 class="card-header">Search for a City:</h3>
+      <form id="city-form" class="card-body">
+        <input id="searchBar" type="text" autofocus="true" class="form-input" />
+        <button type="submit" class="btn" id="searchBtn">Search</button>
+      </form>
+    </div>
 
-    <div>
+    <!-- <div class="card">
         <h2>Seach for a City:</h2>
         <input class="city-input" type="text-area">
     </div class="btnDiv">
-    <button class="searchBtn">Search</button>
+    <button class="searchBtn">Search</button> -->
+
+    <div class="col-12 col-md-4">
+      <h2 id="subtitle"></h2>
+      <div id="forecast-container" class="list-group"></div>
+      <div id="breakdown"></div>
+    </div>
+  </main>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./assets/js/script.js"></script>
     
 </body>
