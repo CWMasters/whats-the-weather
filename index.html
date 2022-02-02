@@ -17,7 +17,7 @@
 
 
   <main class="flex-row justify-space-between">
-    <div class="card col-12 col-md-3">
+    <div class="card col-3">
       <h3 class="card-header">Search for a City:</h3>
       <form id="city-form" class="card-body">
         <input id="searchBar" type="text" autofocus="true" class="form-input" />
@@ -31,11 +31,18 @@
     </div class="btnDiv">
     <button class="searchBtn">Search</button> -->
 
-    <div class="col-12 col-md-4">
-      <h2 id="subtitle"></h2>
+    <div class="card col-9 block">
+      <h3>Today's Forecast:<span  id="subtitle"></span></h3>
       <div id="forecast-container" class="list-group"></div>
       <div id="breakdown"></div>
+        <p>Temp: <span class="temp" id="show-temp"></span></p>
+        <p>Wind: <span id="wind"></span></p>
+        <p>Humidity: <span id="humidity"></span></p>
+        <p>UV Index: <span id="uv-index"></span></p>
     </div>
+
+    <h4 class="fc-title">5-Day Forecast:</h4>
+        <div class="card 5-container-col"></div>
   </main>
 
 
