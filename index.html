@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>What's The Weather</title>
+</head>
+
+<body> 
+  <header>
+    <h1 class="title">Show Me the Weather</h1>
+  </header>
+
+  <!-- search bar/header -->
+  <main class="row justify-space-between">
+    <div class="card col-3">
+      <h3 class="card-header">Search for a City:</h3>
+      <form id="city-form" class="card-body">
+        <input id="searchBar" type="text" autofocus="true" class="form-input" />
+        <button type="submit" class="btn" id="searchBtn">Search</button>
+      </form>
+    </div>
+
+    <!-- main forecast -->
+    <div class="card col-8">
+      <h3>Today's Forecast:<span  id="subtitle"></span></h3>
+        <div id="forecast-container" class="list-group"></div>
+        <div id="breakdown"></div>
+          <p>Temp: <span class="temp" id="show-temp"></span></p>
+          <p>Wind: <span id="wind"></span></p>
+          <p>Humidity: <span id="humidity"></span></p>
+          <p>UV Index: <span id="uv-index"></span></p>
+    </div>
+  </main>
+
+    <!-- 5 day forecast -->
+    <h4 class="fc-title">5-Day Forecast:</h4>
+        <div class="card 5-container"></div>
+
+        <div class="row justify-space-between">
+          <div class="card col-2">
+            <h6>Date:</h6>
+              <p>Temp: <span class="temp" id="show-temp"></span></p>
+              <p>Wind: <span id="wind"></span></p>
+              <p>Humidity: <span id="humidity"></span></p>
+          </div>
+
+          <div class="card col-2">
+            <h6>Date:</h6>
+              <p>Temp: <span class="temp" id="show-temp"></span></p>
+              <p>Wind: <span id="wind"></span></p>
+              <p>Humidity: <span id="humidity"></span></p>
+          </div>
+        
+          <div class="card col-2">
+            <h6>Date:</h6>
+              <p>Temp: <span class="temp" id="show-temp"></span></p>
+              <p>Wind: <span id="wind"></span></p>
+              <p>Humidity: <span id="humidity"></span></p>
+          </div>
+        
+          <div class="card col-2">
+            <h6>Date:</h6>
+              <p>Temp: <span class="temp" id="show-temp"></span></p>
+              <p>Wind: <span id="wind"></span></p>
+              <p>Humidity: <span id="humidity"></span></p>
+          </div>
+        
+          <div class="card col-2">
+            <h6>Date:</h6>
+              <p>Temp: <span class="temp" id="show-temp"></span></p>
+              <p>Wind: <span id="wind"></span></p>
+              <p>Humidity: <span id="humidity"></span></p>
+          </div>
+        </div>
+        
+
+         
+        
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    
+</body>
+</html>
