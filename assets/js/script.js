@@ -108,7 +108,7 @@ var {lon} = data.coord;
 // loadTasks();
 
 // $(".searchBtn").on("click, saveCity)");
-cityFormEl.addEventListener("click", showHistory)
+// cityFormEl.addEventListener("click", showHistory)
 cityFormEl.addEventListener("submit", citySubmitHandler);
 
 
