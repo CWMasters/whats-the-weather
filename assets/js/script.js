@@ -37,21 +37,22 @@ var citySubmitHandler = function(event) {
 };
 
 // add this to click function, tweak if, json.stringify on setItem
-// function saveCity(city) {
-//   if(localStorage.getItem("city")) {
+// function citiesStore(city) {
+  // if(localStorage.getItem("city")) {
 //     citiesStore = JSON.parse(localStorage.getItem("city"));
 //     console.log(city);
 //   }
 // }
 
-// var saveCitiesStore = function(cityText) {
-//   citiesStore.push(cityText);
+// var saveCitiesStore = function(event) {
 //   localStorage.setitem("city", JSON.stringify(citiesStore));
+//   console.log(event)
+  // citiesStore.push(cityText);
 // };
-// var showHistory = function(event) {
-//   let lastCity = event.target.textContent;
-//   cityFormEl.value = lastCity
+// var showHistory = function(saveCitiesStore) {
+//   saveCitiesStore = JSON.parse(localStorage.getItem(city));
 // };
+
 
 
 // API's to display
@@ -104,11 +105,8 @@ var {lon} = data.coord;
     }
 }
 
-// getForecast();
-// loadTasks();
 
-// $(".searchBtn").on("click, saveCity)");
-// cityFormEl.addEventListener("click", showHistory)
+
 cityFormEl.addEventListener("submit", citySubmitHandler);
 
 
